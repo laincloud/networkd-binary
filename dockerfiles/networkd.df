@@ -1,9 +1,9 @@
 FROM golang:1.6.2
 
-RUN wget https://github.com/laincloud/networkd/archive/v0.1.15.tar.gz \
+RUN wget https://github.com/laincloud/networkd/archive/v0.1.16.tar.gz \
     -O /tmp/networkd.tar.gz && tar xzvf /tmp/networkd.tar.gz -C /tmp
 
-RUN mv /tmp/networkd-0.1.15 /tmp/networkd.git
+RUN mv /tmp/networkd-0.1.16 /tmp/networkd.git
 
 RUN mkdir -p $GOPATH/src/github.com/laincloud/ \
     && ln -s /tmp/networkd.git $GOPATH/src/github.com/laincloud/networkd;
