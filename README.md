@@ -1,3 +1,5 @@
+# DEPRECATED.
+
 Networkd Binary Image
 =====================
 
